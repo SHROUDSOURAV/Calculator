@@ -57,6 +57,7 @@ const calculate = function(){
     if(currentInput === "" || previousInput === "")
         return;
     let cal;
+    // convertion required to perform calculation
     let prev = parseFloat(previousInput);
     let curr = parseFloat(currentInput);
     switch(currentOperation){
@@ -80,6 +81,7 @@ const calculate = function(){
         default:
             return;
     }
+    // after calculation converted to string so that display of numbers and operations can be shown
     currentInput = cal.toString();
     currentOperation = "";
     previousInput = "";
