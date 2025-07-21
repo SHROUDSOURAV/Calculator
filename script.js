@@ -80,8 +80,6 @@ const calculate = function(){
         default:
             return;
     }
-    console.log(`CurrentInput => ${currentInput}`);
-    console.log(typeof currentInput);
     currentInput = cal.toString();
     currentOperation = "";
     previousInput = "";
